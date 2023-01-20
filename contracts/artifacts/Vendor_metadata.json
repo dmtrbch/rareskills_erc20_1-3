@@ -122,6 +122,7 @@
 			}
 		],
 		"devdoc": {
+			"author": "Dimitar Bochvaroski",
 			"kind": "dev",
 			"methods": {
 				"buyTokens()": {
@@ -148,6 +149,7 @@
 					"details": "1 ETH = 10000 MTK"
 				}
 			},
+			"title": "Vendor contract for selling MTK tokens",
 			"version": 1
 		},
 		"userdoc": {
@@ -163,6 +165,7 @@
 					"notice": "Vendor contract will store all the supply of the MTK token, and its' use wiil be to sell the tokens to users that want to buy them "
 				}
 			},
+			"notice": "The purpose of the contract is to sell MTK tokens to users",
 			"version": 1
 		}
 	},
@@ -231,19 +234,19 @@
 			]
 		},
 		"contracts/3_MyToken.sol": {
-			"keccak256": "0x98d19eb04d08125b9ce36226a21969d8e5cbdf6b969bc72ff36d03668c8a0127",
+			"keccak256": "0xb32f38fda4bf2e137ceb843d59206281cc6e86ceeaf6af57988682ea3d72f950",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e5fb69866461d5fe6fc3a81810ba89a56c9b62ff7ce0c94d51e7e4ffa9ce746d",
-				"dweb:/ipfs/QmSEQJZEoHkYG6YzdbXeQ1kpK72MdBQu1DX84oEnrdfpFr"
+				"bzz-raw://953f28263e201ac0c79b3762e82e46de8f66051016b4d4d356606385076e3812",
+				"dweb:/ipfs/QmSvMbDosxWM4hDNr8TsaA8veMbu81po3gPvLDctdnNu6h"
 			]
 		},
 		"contracts/4_Vendor.sol": {
-			"keccak256": "0x60d1918619ce8e19d89be8e119fc95d67af33dbee9b558b3582bcd012113d65a",
+			"keccak256": "0x723faad1ad4f2e07533f922d943d64555fffdbfd6160c3b4307f4915b221cdf9",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7103bd9a96b6fd6e0415ef48155ba0f3e59a3b7a8b4f9d083c7ebf51a704b020",
-				"dweb:/ipfs/QmUrbXqZ4eL6NH8dTtc2d7uYCH3V3rqdaq9XboZvnnkysh"
+				"bzz-raw://5571b94592489b95aabc2c850d0ba5dd88b11791493fb8bc4331baa3a00a0fba",
+				"dweb:/ipfs/QmRVJCoCEMfauhJJuh7L28CAdaPBNzFpQqa2Cv1sNWbgSZ"
 			]
 		}
 	},

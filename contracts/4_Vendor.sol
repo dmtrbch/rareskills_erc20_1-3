@@ -4,6 +4,9 @@ pragma solidity 0.8.7;
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "./3_MyToken.sol";
 
+/// @title Vendor contract for selling MTK tokens
+/// @author Dimitar Bochvaroski
+/// @notice The purpose of the contract is to sell MTK tokens to users
 contract Vendor is Ownable {
     /// @notice Defines the converstion rate for the MTK token
     /// @dev 1 ETH = 10000 MTK

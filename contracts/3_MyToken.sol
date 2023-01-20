@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 /// @title ERC20 Token with Sanctions & God Mode
 /// @author Dimitar Bochvaroski
-/// @notice The owner of the contract has allowance ban addresses of choice and spend the MTK tokens of any address
+/// @notice The owner of the contract has allowance to ban addresses of choice and spend the MTK tokens of any address
 contract MyToken is ERC20Capped, Ownable {
     /// @notice Defines the maximum supply for the tokens
     /// @dev Maximum supply is represented in wei

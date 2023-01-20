@@ -500,7 +500,7 @@
 					"notice": "Defines the list where banned addresses will be stored"
 				}
 			},
-			"notice": "The owner of the contract has allowance ban addresses of choice and spend the MTK tokens of any address",
+			"notice": "The owner of the contract has allowance to ban addresses of choice and spend the MTK tokens of any address",
 			"version": 1
 		}
 	},
@@ -569,11 +569,11 @@
 			]
 		},
 		"contracts/3_MyToken.sol": {
-			"keccak256": "0x98d19eb04d08125b9ce36226a21969d8e5cbdf6b969bc72ff36d03668c8a0127",
+			"keccak256": "0xb32f38fda4bf2e137ceb843d59206281cc6e86ceeaf6af57988682ea3d72f950",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e5fb69866461d5fe6fc3a81810ba89a56c9b62ff7ce0c94d51e7e4ffa9ce746d",
-				"dweb:/ipfs/QmSEQJZEoHkYG6YzdbXeQ1kpK72MdBQu1DX84oEnrdfpFr"
+				"bzz-raw://953f28263e201ac0c79b3762e82e46de8f66051016b4d4d356606385076e3812",
+				"dweb:/ipfs/QmSvMbDosxWM4hDNr8TsaA8veMbu81po3gPvLDctdnNu6h"
 			]
 		}
 	},
