@@ -8,9 +8,7 @@ import "./3_MyToken.sol";
 /// @author Dimitar Bochvaroski
 /// @notice The purpose of the contract is to sell MTK tokens to users
 contract Vendor is Ownable {
-    /// @notice Defines the converstion rate for the MTK token
-    /// @dev 1 ETH = 10000 MTK
-    uint256 public constant TOKENS_PER_ETH = 10000;
+    uint256 private constant TOKENS_PER_ETH = 10000;
 
     MyToken myToken;
 

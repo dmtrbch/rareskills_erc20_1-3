@@ -62,19 +62,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "TOKENS_PER_ETH",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "buyTokens",
 				"outputs": [],
 				"stateMutability": "payable",
@@ -144,20 +131,12 @@
 					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
 				}
 			},
-			"stateVariables": {
-				"TOKENS_PER_ETH": {
-					"details": "1 ETH = 10000 MTK"
-				}
-			},
 			"title": "Vendor contract for selling MTK tokens",
 			"version": 1
 		},
 		"userdoc": {
 			"kind": "user",
 			"methods": {
-				"TOKENS_PER_ETH()": {
-					"notice": "Defines the converstion rate for the MTK token"
-				},
 				"buyTokens()": {
 					"notice": "Users are able to call this function to buy the MTK token from the Vendor contract"
 				},
@@ -234,19 +213,19 @@
 			]
 		},
 		"contracts/3_MyToken.sol": {
-			"keccak256": "0xb32f38fda4bf2e137ceb843d59206281cc6e86ceeaf6af57988682ea3d72f950",
+			"keccak256": "0x371246e9a3e45a5ca5f96a291c32da491781a7cf17b70e8f3f38e087bf3a297c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://953f28263e201ac0c79b3762e82e46de8f66051016b4d4d356606385076e3812",
-				"dweb:/ipfs/QmSvMbDosxWM4hDNr8TsaA8veMbu81po3gPvLDctdnNu6h"
+				"bzz-raw://e52c7a4928de5abcbc9e4d93accf06ff7fc379523bc13991aae59218acf31c87",
+				"dweb:/ipfs/QmUREZai2LaXXoGuVF94edXU9jf1XVcr5V1cYWNN4nsCoV"
 			]
 		},
 		"contracts/4_Vendor.sol": {
-			"keccak256": "0x723faad1ad4f2e07533f922d943d64555fffdbfd6160c3b4307f4915b221cdf9",
+			"keccak256": "0xa55d8771960d2882119cda5ed9a0b1f71f1f7a6aa286be1ae5ce21f52e6d14b6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5571b94592489b95aabc2c850d0ba5dd88b11791493fb8bc4331baa3a00a0fba",
-				"dweb:/ipfs/QmRVJCoCEMfauhJJuh7L28CAdaPBNzFpQqa2Cv1sNWbgSZ"
+				"bzz-raw://2e94b5ef6260551c28bbbd10d9b2d4fcb68837772c73b1b834bf167bce9021e1",
+				"dweb:/ipfs/QmTehqF5JRwCBUUPp6vseSENx3ggG4trdrMLr34Cozx1Fi"
 			]
 		}
 	},

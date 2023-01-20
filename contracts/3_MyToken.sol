@@ -8,13 +8,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 /// @author Dimitar Bochvaroski
 /// @notice The owner of the contract has allowance to ban addresses of choice and spend the MTK tokens of any address
 contract MyToken is ERC20Capped, Ownable {
-    /// @notice Defines the maximum supply for the tokens
-    /// @dev Maximum supply is represented in wei
-    uint256 constant public MAX_SUPPLY = 100_000_000*10**18;
-
-    /// @notice Defines the initial total supply that will be minted for the tokens    
-    /// @dev Total supply is represented in wei
-    uint256 constant public TOTAL_SUPPLY = 22_000_000*10**18;
+    uint256 constant private MAX_SUPPLY = 100_000_000*10**18;
+    uint256 constant private TOTAL_SUPPLY = 22_000_000*10**18;
 
     /// @notice Defines the list where banned addresses will be stored
     mapping(address => bool) public bannedAddresses;

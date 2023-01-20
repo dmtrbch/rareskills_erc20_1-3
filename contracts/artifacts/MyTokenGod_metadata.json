@@ -80,19 +80,6 @@
 				"type": "event"
 			},
 			{
-				"inputs": [],
-				"name": "MAX_SUPPLY",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -433,21 +420,12 @@
 					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
 				}
 			},
-			"stateVariables": {
-				"MAX_SUPPLY": {
-					"details": "Maximum supply is represented in wei"
-				}
-			},
 			"title": "ERC20 Token with God Mode",
 			"version": 1
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {
-				"MAX_SUPPLY()": {
-					"notice": "Defines the maximum supply for the tokens"
-				}
-			},
+			"methods": {},
 			"notice": "The owner of the contract has allowance to spend the MTKG tokens of any address",
 			"version": 1
 		}
@@ -517,11 +495,11 @@
 			]
 		},
 		"contracts/2_MyTokenGod.sol": {
-			"keccak256": "0xa6cfb54a6f4d0e75aaaf3b1a034db203218dc7a41e69f358b9083717c4a3c680",
+			"keccak256": "0x345050abd028cc3350a2dad1163bfdb275b5ad6c0d78c5d2485c2d5707c7f7dc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://aed785ad79f5fac5bbec53b24189370f0f42a46351bf48d05b59c1de74fe8dd9",
-				"dweb:/ipfs/QmQ6BGZyrffr8bGkcZtxqUTogUQ9rcNN8a5Wea4sSYkzXn"
+				"bzz-raw://79caa24e8f4b116def1d01aaf46fc5df14b3476440330c3d093b1d1c18b81e7f",
+				"dweb:/ipfs/QmT9ETC8PifU3TLcHjFkjYU6yBNyMU5e69Dk33WPAV8sUt"
 			]
 		}
 	},

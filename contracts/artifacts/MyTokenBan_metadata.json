@@ -80,19 +80,6 @@
 				"type": "event"
 			},
 			{
-				"inputs": [],
-				"name": "MAX_SUPPLY",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -471,20 +458,12 @@
 					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
 				}
 			},
-			"stateVariables": {
-				"MAX_SUPPLY": {
-					"details": "Maximum supply is represented in wei"
-				}
-			},
 			"title": "ERC20 Token with Sanctions",
 			"version": 1
 		},
 		"userdoc": {
 			"kind": "user",
 			"methods": {
-				"MAX_SUPPLY()": {
-					"notice": "Defines the maximum supply for the tokens"
-				},
 				"banAddress(address)": {
 					"notice": "Owner of the contract is capable of banning an address of choice"
 				},
@@ -561,11 +540,11 @@
 			]
 		},
 		"contracts/1_MyTokenBan.sol": {
-			"keccak256": "0x271b912068f5e04bd05265709a3c52805017e8988894219678e0efea07314036",
+			"keccak256": "0xb2e0c410c12de4618119686d0759df0ba322bae58745a8294af6533e0771f1a1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1ee26b570d40be1ac382df783615bdc448ff798e28b5718743aaf79d0839e5a3",
-				"dweb:/ipfs/QmQEkDKYrSSdDM4hhsS9heoQGsPF3K5DkryteJuZdUnKdA"
+				"bzz-raw://dc9a9285843d541fb3d4174bef28efcbaaf8b70b78c66f2b6a6b4d882b0804f8",
+				"dweb:/ipfs/QmfC4w4BDGRUR7qCoVKsbUEVTsxGfZ7Ydqy462hE7C56ka"
 			]
 		}
 	},

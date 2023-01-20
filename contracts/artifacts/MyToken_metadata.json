@@ -80,32 +80,6 @@
 				"type": "event"
 			},
 			{
-				"inputs": [],
-				"name": "MAX_SUPPLY",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "TOTAL_SUPPLY",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -473,26 +447,12 @@
 					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
 				}
 			},
-			"stateVariables": {
-				"MAX_SUPPLY": {
-					"details": "Maximum supply is represented in wei"
-				},
-				"TOTAL_SUPPLY": {
-					"details": "Total supply is represented in wei"
-				}
-			},
 			"title": "ERC20 Token with Sanctions & God Mode",
 			"version": 1
 		},
 		"userdoc": {
 			"kind": "user",
 			"methods": {
-				"MAX_SUPPLY()": {
-					"notice": "Defines the maximum supply for the tokens"
-				},
-				"TOTAL_SUPPLY()": {
-					"notice": "Defines the initial total supply that will be minted for the tokens    "
-				},
 				"banAddress(address)": {
 					"notice": "Owner of the contract is capable of banning an address of choice"
 				},
@@ -569,11 +529,11 @@
 			]
 		},
 		"contracts/3_MyToken.sol": {
-			"keccak256": "0xb32f38fda4bf2e137ceb843d59206281cc6e86ceeaf6af57988682ea3d72f950",
+			"keccak256": "0x371246e9a3e45a5ca5f96a291c32da491781a7cf17b70e8f3f38e087bf3a297c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://953f28263e201ac0c79b3762e82e46de8f66051016b4d4d356606385076e3812",
-				"dweb:/ipfs/QmSvMbDosxWM4hDNr8TsaA8veMbu81po3gPvLDctdnNu6h"
+				"bzz-raw://e52c7a4928de5abcbc9e4d93accf06ff7fc379523bc13991aae59218acf31c87",
+				"dweb:/ipfs/QmUREZai2LaXXoGuVF94edXU9jf1XVcr5V1cYWNN4nsCoV"
 			]
 		}
 	},
