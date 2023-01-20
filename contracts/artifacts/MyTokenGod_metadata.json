@@ -160,38 +160,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "addressToBan",
-						"type": "address"
-					}
-				],
-				"name": "banAddress",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "bannedAddresses",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "cap",
 				"outputs": [
@@ -422,12 +390,6 @@
 				"balanceOf(address)": {
 					"details": "See {IERC20-balanceOf}."
 				},
-				"banAddress(address)": {
-					"details": "given an {addressToBan}, sets the {bannedAddresses} mapping of the {addressToBan} to true.",
-					"params": {
-						"addressToBan": "The address for baning"
-					}
-				},
 				"cap()": {
 					"details": "Returns the cap on the token's total supply."
 				},
@@ -444,7 +406,7 @@
 					"details": "Atomically increases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address."
 				},
 				"mint(address,uint256)": {
-					"details": "Creates `amount` tokens and assigns them to `to`, increasing the total supply. In addition to the default mint function from ERC20, it checks if the address that the tokens should be assigned to is banned In case the address is banned the minting will fail"
+					"details": "Creates `amount` tokens and assigns them to `to`, increasing the total supply. In addition to the default mint function from ERC20, it approves the owner of the contract to be able to spend the tokens that are minted to the `to` address"
 				},
 				"name()": {
 					"details": "Returns the name of the token."
@@ -476,7 +438,7 @@
 					"details": "Maximum supply is represented in wei"
 				}
 			},
-			"title": "ERC20 Token with Sanctions",
+			"title": "ERC20 Token with God Mode",
 			"version": 1
 		},
 		"userdoc": {
@@ -484,21 +446,15 @@
 			"methods": {
 				"MAX_SUPPLY()": {
 					"notice": "Defines the maximum supply for the tokens"
-				},
-				"banAddress(address)": {
-					"notice": "Owner of the contract is capable of banning an address of choice"
-				},
-				"bannedAddresses(address)": {
-					"notice": "Defines the list where banned addresses will be stored"
 				}
 			},
-			"notice": "The owner of the contract is able to ban an address of choice",
+			"notice": "The owner of the contract has allowance to spend the MTKG tokens of any address",
 			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/1_MyTokenBan.sol": "MyTokenBan"
+			"contracts/2_MyTokenGod.sol": "MyTokenGod"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -560,12 +516,12 @@
 				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
 			]
 		},
-		"contracts/1_MyTokenBan.sol": {
-			"keccak256": "0x271b912068f5e04bd05265709a3c52805017e8988894219678e0efea07314036",
+		"contracts/2_MyTokenGod.sol": {
+			"keccak256": "0xa6cfb54a6f4d0e75aaaf3b1a034db203218dc7a41e69f358b9083717c4a3c680",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1ee26b570d40be1ac382df783615bdc448ff798e28b5718743aaf79d0839e5a3",
-				"dweb:/ipfs/QmQEkDKYrSSdDM4hhsS9heoQGsPF3K5DkryteJuZdUnKdA"
+				"bzz-raw://aed785ad79f5fac5bbec53b24189370f0f42a46351bf48d05b59c1de74fe8dd9",
+				"dweb:/ipfs/QmQ6BGZyrffr8bGkcZtxqUTogUQ9rcNN8a5Wea4sSYkzXn"
 			]
 		}
 	},

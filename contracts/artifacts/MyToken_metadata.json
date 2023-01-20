@@ -93,6 +93,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "TOTAL_SUPPLY",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -266,18 +279,7 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "to",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
+				"inputs": [],
 				"name": "mint",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -410,6 +412,7 @@
 			}
 		],
 		"devdoc": {
+			"author": "Dimitar Bochvaroski",
 			"kind": "dev",
 			"methods": {
 				"allowance(address,address)": {
@@ -421,8 +424,17 @@
 				"balanceOf(address)": {
 					"details": "See {IERC20-balanceOf}."
 				},
+				"banAddress(address)": {
+					"details": "given an {addressToBan}, sets the {bannedAddresses} mapping of the {addressToBan} to true.",
+					"params": {
+						"addressToBan": "The address for baning"
+					}
+				},
 				"cap()": {
 					"details": "Returns the cap on the token's total supply."
+				},
+				"constructor": {
+					"details": "Passes the values for the {name} and {symbol} parameters, required for the ERC20 token implementation from OpenZeppelin. Makes use of the ERC20Capped contract from OpenZeppelin to set the maximum supply of the tokens"
 				},
 				"decimals()": {
 					"details": "Returns the number of decimals used to get its user representation. For example, if `decimals` equals `2`, a balance of `505` tokens should be displayed to a user as `5.05` (`505 / 10 ** 2`). Tokens usually opt for a value of 18, imitating the relationship between Ether and Wei. This is the value {ERC20} uses, unless this function is overridden; NOTE: This information is only used for _display_ purposes: it in no way affects any of the arithmetic of the contract, including {IERC20-balanceOf} and {IERC20-transfer}."
@@ -432,6 +444,9 @@
 				},
 				"increaseAllowance(address,uint256)": {
 					"details": "Atomically increases the allowance granted to `spender` by the caller. This is an alternative to {approve} that can be used as a mitigation for problems described in {IERC20-approve}. Emits an {Approval} event indicating the updated allowance. Requirements: - `spender` cannot be the zero address."
+				},
+				"mint()": {
+					"details": "Creates `amount` tokens and assigns them to `to`, increasing the total supply. In addition to the default mint function from ERC20, it checks if the address that the tokens should be assigned to is banned In case the address is banned the minting will fail Mints the total supply to one address, which is the Vendor contract, the contract that will be used for selling the token"
 				},
 				"name()": {
 					"details": "Returns the name of the token."
@@ -458,17 +473,40 @@
 					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
 				}
 			},
+			"stateVariables": {
+				"MAX_SUPPLY": {
+					"details": "Maximum supply is represented in wei"
+				},
+				"TOTAL_SUPPLY": {
+					"details": "Total supply is represented in wei"
+				}
+			},
+			"title": "ERC20 Token with Sanctions & God Mode",
 			"version": 1
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {},
+			"methods": {
+				"MAX_SUPPLY()": {
+					"notice": "Defines the maximum supply for the tokens"
+				},
+				"TOTAL_SUPPLY()": {
+					"notice": "Defines the initial total supply that will be minted for the tokens    "
+				},
+				"banAddress(address)": {
+					"notice": "Owner of the contract is capable of banning an address of choice"
+				},
+				"bannedAddresses(address)": {
+					"notice": "Defines the list where banned addresses will be stored"
+				}
+			},
+			"notice": "The owner of the contract has allowance ban addresses of choice and spend the MTK tokens of any address",
 			"version": 1
 		}
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/MyToken.sol": "MyToken"
+			"contracts/3_MyToken.sol": "MyToken"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -530,12 +568,12 @@
 				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
 			]
 		},
-		"contracts/MyToken.sol": {
-			"keccak256": "0xfd69c4919c4147ec5b4b4d9227d1dceaff29f2a24dd3f66e8fadf8a8b81d47fe",
+		"contracts/3_MyToken.sol": {
+			"keccak256": "0x98d19eb04d08125b9ce36226a21969d8e5cbdf6b969bc72ff36d03668c8a0127",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c700aca76dda97fb25e3e69f8a4dacba8dc6256a8331b7627e8775a69940878a",
-				"dweb:/ipfs/Qma7vf3AYxzKdeDm9ftds2JQRi2bSLZRj3c4ioTDtbjjW4"
+				"bzz-raw://e5fb69866461d5fe6fc3a81810ba89a56c9b62ff7ce0c94d51e7e4ffa9ce746d",
+				"dweb:/ipfs/QmSEQJZEoHkYG6YzdbXeQ1kpK72MdBQu1DX84oEnrdfpFr"
 			]
 		}
 	},
